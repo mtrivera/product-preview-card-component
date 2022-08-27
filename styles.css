@@ -1,0 +1,33 @@
+:root {
+  --cream: hsl(30, 38%, 92%);
+  --br: calc((10 / 16) * 1rem);
+  --card-width: calc((343/16) * 1rem);
+}
+
+body {
+  background: var(--cream);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/*
+ * Card styles
+ */
+
+.card {
+  width: var(--card-width);
+  background: #fff;
+  border-radius: var(--br);
+}
+
+.card-hero__img {
+  border-radius: var(--br) var(--br) 0 0;
+  width: 343px;
+  height: 240px;
+  object-fit: cover;
+}
