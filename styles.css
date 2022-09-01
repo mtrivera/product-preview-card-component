@@ -2,6 +2,8 @@
   --cream: hsl(30, 38%, 92%);
   --br: calc((10 / 16) * 1rem);
   --card-width: calc((343/16) * 1rem);
+  --dark-grey-blue: hsl(228, 12%, 48%);
+  --dark-cyan: hsl(158, 36%, 37%);
 }
 
 body {
@@ -27,7 +29,42 @@ body {
 
 .card-hero__img {
   border-radius: var(--br) var(--br) 0 0;
-  width: 343px;
-  height: 240px;
+  max-width: 100%;
+  /* width: 343px; */
+  /* height: 240px; */
   object-fit: cover;
+}
+
+.product-heading__text {
+  font: 0.90rem 'Montserrat', sans-serif;
+  color: var(--dark-grey-blue);
+  text-transform: uppercase;
+}
+
+.product-tagline__text {
+  font: 2.0rem 'Fraunces', sans-serif;
+  color: #000;
+}
+
+.product-copy__text {
+  font: 0.90rem 'Montserrat', sans-serif;
+  color: var(--dark-grey-blue);
+}
+
+.product-sale-price__text {
+  font: 2.0rem 'Fraunces', serif;
+  color: var(--dark-cyan);
+}
+
+.product-normal-price__text {
+  text-decoration: line-through;
+}
+
+.product-cta__btn {
+  text-decoration: none;
+  padding: 1rem;
+  background-color: var(--dark-cyan);
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
 }
